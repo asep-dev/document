@@ -1,0 +1,1084 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Soluzionivacanze</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="fixed left-0 right-0 top-0 z-50 bg-white px-5 lg:px-0">
+            <div
+                class="relative mx-auto flex max-w-6xl items-center justify-between py-3.5 md:px-0 md:py-3"
+            >
+                <a href="#" class="w-1/4">
+                    <img class="w-32" src="../public/images/logo.svg" alt="" />
+                </a>
+                <nav class="hidden w-full justify-center gap-x-10 lg:flex">
+                    <a
+                        href="#"
+                        class="leading-[3.5] transition-all hover:opacity-60"
+                        >Home</a
+                    >
+                    <a
+                        href="#"
+                        class="leading-[3.5] transition-all hover:opacity-60"
+                        >Chi Siamo</a
+                    >
+                    <a
+                        href="#"
+                        class="leading-[3.5] transition-all hover:opacity-60"
+                        >Prezzi</a
+                    >
+                    <div class="group relative">
+                        <a
+                            href="#"
+                            class="flex items-center gap-x-2.5 leading-[3.5] transition-all"
+                            >Blog
+                            <i
+                                class="ri-arrow-down-s-line ml-auto text-lg transition-all duration-500 group-hover:rotate-180"
+                            ></i
+                        ></a>
+                        <div
+                            class="absolute top-full -z-10 min-w-[240px] max-w-[240px] -translate-y-full rounded-lg bg-white p-3 opacity-0 shadow-green-800/20 drop-shadow-2xl transition-all duration-500 group-hover:-translate-y-0 group-hover:opacity-100"
+                        >
+                            <a
+                                href="#"
+                                class="block rounded-md px-3 py-2 transition-all hover:bg-neutral-100"
+                                >Other Sub</a
+                            >
+                        </div>
+                    </div>
+                    <a
+                        href="#"
+                        class="leading-[3.5] transition-all hover:opacity-60"
+                        >Contatti</a
+                    >
+                    <a
+                        href="#"
+                        class="leading-[3.5] transition-all hover:opacity-60"
+                        >FAQ</a
+                    >
+                </nav>
+
+                <div
+                    id="menu-mobile"
+                    class="fixed left-0 right-0 top-0 z-10 hidden h-0 duration-700 lg:hidden"
+                >
+                    <nav
+                        class="flex h-[calc(100vh_-_4rem)] w-full flex-col overflow-auto bg-white p-16 text-sm font-medium"
+                    >
+                        <a
+                            href="#"
+                            class="border-b py-3 transition-all hover:text-gray-500 lg:border-none lg:py-0"
+                            >Home</a
+                        >
+                        <a
+                            href="#"
+                            class="border-b py-3 transition-all hover:text-gray-500 lg:border-none lg:py-0"
+                            >Chi Siamo</a
+                        >
+                        <a
+                            href="#"
+                            class="border-b py-3 transition-all hover:text-gray-500 lg:border-none lg:py-0"
+                            >Prezzi</a
+                        >
+                        <div class="dropdown inline-block transition-all">
+                            <a
+                                href="#"
+                                class="flex items-center gap-x-2 border-b py-3 transition-all hover:text-gray-500 lg:border-none lg:py-0"
+                                >Blog
+                                <i
+                                    class="ri-add-line ml-auto mr-2 text-lg leading-none transition-all duration-500"
+                                ></i
+                            ></a>
+                            <div
+                                aria-expanded="true"
+                                class="dropdown-menu flex h-full flex-col overflow-auto opacity-100 duration-500 aria-expanded:!h-0 aria-expanded:!overflow-hidden aria-expanded:!opacity-0"
+                            >
+                                <a
+                                    href="#"
+                                    class="ml-5 border-b py-3 lg:ml-0 lg:border-none"
+                                    >Other Sub</a
+                                >
+                            </div>
+                        </div>
+                        <a
+                            href="#"
+                            class="border-b py-3 transition-all hover:text-gray-500 lg:border-none lg:py-0"
+                            >Contatti</a
+                        >
+                        <a
+                            href="#"
+                            class="border-b py-3 transition-all hover:text-gray-500 lg:border-none lg:py-0"
+                            >Faq</a
+                        >
+                    </nav>
+                </div>
+                <button
+                    id="mobile-menu-button"
+                    type="button"
+                    title="menu"
+                    class="group z-50 inline-block h-6 w-6 overflow-hidden transition-all lg:hidden"
+                >
+                    <div class="ml-1.5 h-[2px] w-6 bg-black duration-300"></div>
+                    <div class="my-1.5 h-[2px] w-6 bg-black"></div>
+                    <div class="ml-3 h-[2px] w-6 bg-black duration-300"></div>
+                </button>
+                <div class="hidden w-1/4 flex-col items-end lg:flex">
+                    <span class="block text-xs font-medium tracking-wide"
+                        >Contattateci</span
+                    >
+                    <span class="block text-lg font-bold"
+                        >(+39) 329 101 2074</span
+                    >
+                </div>
+            </div>
+        </header>
+
+        <main class="mt-16 md:mt-20">
+            <!-- Hero -->
+            <section class="relative">
+                <div>
+                    <img
+                        class="h-[480px] w-full object-cover object-top lg:h-[640px]"
+                        src="/images/hero.webp"
+                        alt=""
+                    />
+                </div>
+                <div
+                    class="absolute top-0 flex h-full w-full items-center px-5 lg:px-0"
+                >
+                    <div
+                        class="mx-auto grid w-full max-w-6xl grid-cols-1 gap-12 md:grid-cols-2 md:gap-0"
+                    >
+                        <div>
+                            <h1
+                                class="mb-8 text-4xl font-extrabold tracking-tight text-white drop-shadow-md lg:text-6xl"
+                            >
+                                Servizi E Disbrigo Practiche Nelle Locazioni
+                                Turistiche
+                            </h1>
+                            <p
+                                class="mb-10 text-lg tracking-wide text-white drop-shadow-md"
+                            >
+                                Semplifica la gestione della locazione
+                                turistica: affida a noi la burocrazia!
+                            </p>
+                            <a
+                                href="#"
+                                class="inline-block rounded-lg bg-neutral-50 px-6 py-3.5 text-sm font-medium text-secondary-500 ring-8 ring-neutral-50/30 transition-all duration-300 hover:text-black md:text-base"
+                            >
+                                I Nostri Servizi
+                            </a>
+                        </div>
+                        <div class="hidden items-center justify-center md:flex">
+                            <button
+                                class="relative z-20 inline-block h-14 w-14 rounded-full bg-white text-2xl before:absolute before:inset-0 before:z-10 before:block before:animate-ping before:rounded-full before:bg-white after:absolute after:-inset-2.5 after:z-0 after:block after:h-[calc(100%+20px)] after:w-[calc(100%+20px)] after:rounded-full after:bg-white/30"
+                            >
+                                <i class="ri-play-fill ml-1 align-middle"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About -->
+            <section class="px-5 py-24 lg:px-0">
+                <div class="mx-auto max-w-6xl">
+                    <div
+                        class="grid grid-cols-1 items-center gap-16 md:grid-cols-2 md:gap-20"
+                    >
+                        <div class="relative w-full md:w-[95%] lg:w-[90%]">
+                            <img
+                                class="rounded-3xl object-bottom"
+                                src="../public/images/me.jpg"
+                                alt=""
+                            />
+                            <div
+                                class="absolute -bottom-10 right-7 md:-right-20 md:top-3/4"
+                            >
+                                <div
+                                    class="flex items-center gap-x-5 rounded-xl bg-white px-6 py-5 shadow-xl"
+                                >
+                                    <div>
+                                        <i class="ri-bard-line text-5xl"></i>
+                                    </div>
+                                    <div class="h-11 w-[2px] bg-gray-200"></div>
+                                    <div>
+                                        <div class="text-3xl font-extrabold">
+                                            10+
+                                        </div>
+                                        <span class="text-sm"
+                                            >Anni di Esperienza</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <span
+                                class="mb-5 inline-block rounded bg-primary-800 px-5 py-1.5 text-sm text-neutral-50"
+                                >Chi siamo</span
+                            >
+                            <h2
+                                class="max-w-l mb-8 text-3xl font-extrabold lg:text-4xl"
+                            >
+                                Io, la Sicilia e Soluzioni Vacanze
+                            </h2>
+                            <p class="mb-2">
+                                Sono Valentina Amico (classe 1983) e ho la
+                                fortuna di essere nata e di vivere nella
+                                splendida e meravigliosa Sicilia. Dal 2012,
+                                insieme a Daniele, ho iniziato a lavorare al
+                                progetto “Soluzioni Vacanze”: un portale in cui
+                                inserire case al mare destinate ad ospitare chi
+                                desidera visitare la nostra stupenda terra.
+                            </p>
+                            <p class="mb-10">
+                                Abbiamo deciso di andare a vedere di persona
+                                ogni singola casa di ogni singolo proprietario
+                                che ci chiedeva di collaborare.
+                            </p>
+
+                            <div>
+                                <a
+                                    href="#"
+                                    class="inline-block rounded-lg bg-primary-800 px-7 py-3.5 text-white duration-300 hover:opacity-80"
+                                >
+                                    Per saperne di più
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services -->
+            <section
+                class="bg-primary-900 bg-[url('../public/images/bg-rounded.png')] bg-cover bg-bottom bg-no-repeat px-5 pb-24 pt-20"
+                style="background-position: 0% 105%"
+            >
+                <div class="mx-auto max-w-7xl">
+                    <div class="mb-10 text-center md:mb-20">
+                        <span
+                            class="mb-5 inline-block rounded bg-secondary-500 px-5 py-1.5 text-sm text-neutral-50"
+                            >I Nostri Servizi</span
+                        >
+                        <h2
+                            class="mx-auto max-w-lg text-3xl font-extrabold text-neutral-50 lg:text-4xl"
+                        >
+                            Servizi Professionali Pronti ad Aiutarvi
+                        </h2>
+                    </div>
+                    <div
+                        class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4"
+                    >
+                        <div
+                            class="group relative overflow-hidden rounded-2xl bg-white p-5"
+                        >
+                            <div
+                                class="relative mb-6 h-48 overflow-hidden rounded-xl bg-secondary-500"
+                            >
+                                <img
+                                    class="h-full w-full object-cover duration-300 group-hover:-rotate-3 group-hover:scale-110"
+                                    src="../public/images/1.webp"
+                                    alt=""
+                                />
+                                <div
+                                    class="absolute bottom-0 w-28 rounded-tr-xl bg-secondary-500 py-1.5 text-center text-white"
+                                >
+                                    €69
+                                </div>
+                            </div>
+                            <h3 class="mb-2 text-xl font-bold">
+                                Acquisizione Del Codice Identificativo Regionale
+                            </h3>
+                            <p class="mb-5 line-clamp-3 text-neutral-700">
+                                Il Codice Identificativo Regionale (C.I.R.) è
+                                una sorta di carta di identità di ogni alloggio
+                                turistico o struttura ricettiva, obbligatorio
+                                per la pubblicizzare la locazione turistica.
+                            </p>
+                            <div class="text-right">
+                                <a
+                                    href="#"
+                                    class="relative inline-flex items-center gap-x-2 rounded-lg bg-primary-800 px-10 py-2.5 text-right text-xs text-neutral-50 transition-all duration-300 before:absolute before:-left-36 before:inline-block before:h-1 before:w-full before:bg-neutral-200 hover:opacity-80"
+                                    >Di più
+                                    <i
+                                        class="ri-arrow-right-up-line align-middle"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="group relative overflow-hidden rounded-2xl bg-white p-5"
+                        >
+                            <div
+                                class="relative mb-6 h-48 overflow-hidden rounded-xl bg-secondary-500"
+                            >
+                                <img
+                                    class="h-full w-full object-cover duration-300 group-hover:-rotate-3 group-hover:scale-110"
+                                    src="../public/images/2.webp"
+                                    alt=""
+                                />
+                                <div
+                                    class="absolute bottom-0 w-28 rounded-tr-xl bg-secondary-500 py-1.5 text-center text-white"
+                                >
+                                    €29
+                                </div>
+                            </div>
+                            <h3 class="mb-2 text-xl font-bold">
+                                Apertura Account Alloggiatiweb
+                            </h3>
+                            <p class="mb-5 line-clamp-3 text-neutral-700">
+                                Il Codice Identificativo Regionale (C.I.R.) è
+                                una sorta di carta di identità di ogni alloggio
+                                turistico o struttura ricettiva, obbligatorio
+                                per la pubblicizzare la locazione turistica.
+                            </p>
+                            <div class="text-right">
+                                <a
+                                    href="#"
+                                    class="relative inline-flex items-center gap-x-2 rounded-lg bg-primary-800 px-10 py-2.5 text-right text-xs text-neutral-50 transition-all duration-300 before:absolute before:-left-36 before:inline-block before:h-1 before:w-full before:bg-neutral-200 hover:opacity-80"
+                                    >Di più
+                                    <i
+                                        class="ri-arrow-right-up-line align-middle"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="group relative overflow-hidden rounded-2xl bg-white p-5"
+                        >
+                            <div
+                                class="relative mb-6 h-48 overflow-hidden rounded-xl bg-secondary-500"
+                            >
+                                <img
+                                    class="h-full w-full object-cover duration-300 group-hover:-rotate-3 group-hover:scale-110"
+                                    src="../public/images/3.webp"
+                                    alt=""
+                                />
+                                <div
+                                    class="absolute bottom-0 w-28 rounded-tr-xl bg-secondary-500 py-1.5 text-center text-white"
+                                >
+                                    Mese/Anno
+                                </div>
+                            </div>
+                            <h3 class="mb-2 text-xl font-bold">
+                                Disbrigo Check-In e Burocrazia
+                            </h3>
+                            <p class="mb-5 line-clamp-3 text-neutral-700">
+                                Il Codice Identificativo Regionale (C.I.R.) è
+                                una sorta di carta di identità di ogni alloggio
+                                turistico o struttura ricettiva, obbligatorio
+                                per la pubblicizzare la locazione turistica.
+                            </p>
+                            <div class="text-right">
+                                <a
+                                    href="#"
+                                    class="relative inline-flex items-center gap-x-2 rounded-lg bg-primary-800 px-10 py-2.5 text-right text-xs text-neutral-50 transition-all duration-300 before:absolute before:-left-36 before:inline-block before:h-1 before:w-full before:bg-neutral-200 hover:opacity-80"
+                                    >Di più
+                                    <i
+                                        class="ri-arrow-right-up-line align-middle"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="group relative overflow-hidden rounded-2xl bg-white p-5"
+                        >
+                            <div
+                                class="relative mb-6 h-48 overflow-hidden rounded-xl bg-secondary-500"
+                            >
+                                <img
+                                    class="h-full w-full object-cover duration-300 group-hover:-rotate-3 group-hover:scale-110"
+                                    src="../public/images/4.webp"
+                                    alt=""
+                                />
+                                <div
+                                    class="absolute bottom-0 w-28 rounded-tr-xl bg-secondary-500 py-1.5 text-center text-white"
+                                >
+                                    Mese/Anno
+                                </div>
+                            </div>
+                            <h3 class="mb-2 text-xl font-bold">
+                                Pubblicazione e Gestione Annuncio
+                            </h3>
+                            <p class="mb-5 line-clamp-3 text-neutral-700">
+                                Il Codice Identificativo Regionale (C.I.R.) è
+                                una sorta di carta di identità di ogni alloggio
+                                turistico o struttura ricettiva, obbligatorio
+                                per la pubblicizzare la locazione turistica.
+                            </p>
+                            <div class="text-right">
+                                <a
+                                    href="#"
+                                    class="relative inline-flex items-center gap-x-2 rounded-lg bg-primary-800 px-10 py-2.5 text-right text-xs text-neutral-50 transition-all duration-300 before:absolute before:-left-36 before:inline-block before:h-1 before:w-full before:bg-neutral-200 hover:opacity-80"
+                                    >Di più
+                                    <i
+                                        class="ri-arrow-right-up-line align-middle"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Blog -->
+            <section class="px-5 py-24 lg:px-0">
+                <div class="mx-auto max-w-6xl">
+                    <div class="mb-10 text-center md:mb-20">
+                        <span
+                            class="mb-5 inline-block rounded bg-primary-800 px-5 py-1.5 text-sm text-white"
+                            >Blog</span
+                        >
+                        <h2
+                            class="mx-auto max-w-lg text-3xl font-extrabold md:text-4xl"
+                        >
+                            Articolo Recenti
+                        </h2>
+                    </div>
+                    <div
+                        class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+                    >
+                        <div class="group relative">
+                            <div
+                                class="relative mb-5 h-60 overflow-hidden rounded-xl"
+                            >
+                                <img
+                                    class="h-full w-full object-cover duration-300 group-hover:-rotate-3 group-hover:scale-110"
+                                    src="https://img.freepik.com/free-photo/top-view-travel-elements-collection_23-2148691133.jpg"
+                                    alt=""
+                                />
+                                <div
+                                    class="absolute bottom-2 left-2 rounded-md bg-white px-3 py-2 text-xs"
+                                >
+                                    <i class="ri-calendar-line mr-1"></i>
+                                    28 Nov 2023
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="duration-300 group-hover:opacity-60"
+                            >
+                                <h3 class="mb-5 text-2xl font-extrabold">
+                                    Il nostro servizio per l'acquisizione del
+                                    C.I.R
+                                </h3>
+                            </a>
+                            <p class="line-clamp-2">
+                                Aumentano sempre di più le regioni d’Italia che
+                                istituiscono il Codice Identificativo Regionale
+                                anche per gli affitti brevi
+                            </p>
+                        </div>
+                        <div class="group relative">
+                            <div
+                                class="relative mb-5 h-60 overflow-hidden rounded-xl"
+                            >
+                                <img
+                                    class="h-full w-full object-cover duration-300 group-hover:-rotate-3 group-hover:scale-110"
+                                    src="https://img.freepik.com/free-photo/hello-how-can-i-help-you-hispanic-young-woman-working-travel-agency-talking-with-client-about-booking-flight-business-trip_662251-2398.jpg"
+                                    alt=""
+                                />
+                                <div
+                                    class="absolute bottom-2 left-2 rounded-md bg-white px-3 py-2 text-xs"
+                                >
+                                    <i class="ri-calendar-line mr-1"></i>
+                                    28 Nov 2023
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="duration-300 group-hover:opacity-60"
+                            >
+                                <h3 class="mb-5 text-2xl font-extrabold">
+                                    Arriva il CIR in Sicilia per gli alloggi ad
+                                    uso turistico
+                                </h3>
+                            </a>
+                            <p class="line-clamp-2">
+                                La Sicilia decide di porre fine al “fenomeno
+                                dell'abusivismo degli affitti turistici”
+                                denunciato da diversi anni da “Federalberghi
+                                Sicilia” ed emana un decreto
+                            </p>
+                        </div>
+                        <div class="group relative">
+                            <div
+                                class="relative mb-5 h-60 overflow-hidden rounded-xl"
+                            >
+                                <img
+                                    class="h-full w-full object-cover duration-300 group-hover:-rotate-3 group-hover:scale-110"
+                                    src="https://img.freepik.com/free-photo/side-view-woman-working-as-travel-agent_23-2150455551.jpg"
+                                    alt=""
+                                />
+                                <div
+                                    class="absolute bottom-2 left-2 rounded-md bg-white px-3 py-2 text-xs"
+                                >
+                                    <i class="ri-calendar-line mr-1"></i>
+                                    28 Nov 2023
+                                </div>
+                            </div>
+                            <a
+                                href="#"
+                                class="duration-300 group-hover:opacity-60"
+                            >
+                                <h3 class="mb-5 text-2xl font-extrabold">
+                                    Tassa o Imposta di Soggiorno in Sicilia
+                                    Sud-Orientale
+                                </h3>
+                            </a>
+                            <p class="line-clamp-2">
+                                In questo articolo spiegheremo cos'è l'imposta
+                                di soggiorno, chi deve pagarla, chi ne è esente
+                                e chi è il responsabile dell'incasso
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why choose -->
+            <!-- <section class="pb-20 pt-24">
+                <div class="mx-auto max-w-6xl">
+                    <div class="mb-20 grid grid-cols-2">
+                        <div>
+                            <img
+                                class="rounded-xl object-cover"
+                                src="/2.jpg"
+                                alt=""
+                            />
+                            <div class="grid max-w-lg grid-cols-2">
+                                <div
+                                    class="border-r border-neutral-200 p-8 text-center"
+                                >
+                                    <span
+                                        class="mb-3 inline-block text-4xl font-bold"
+                                        >20+</span
+                                    >
+                                    <p>Years of Experience</p>
+                                </div>
+                                <div class="p-8 text-center">
+                                    <span
+                                        class="mb-3 inline-block text-4xl font-bold"
+                                        >2.023+</span
+                                    >
+                                    <p>Project Completed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div
+                                class="-ml-20 mb-5 mt-14 max-w-2xl rounded-xl border border-dotted bg-white p-16 shadow-xl"
+                            >
+                                <span
+                                    class="mb-5 inline-block rounded bg-green-500 px-5 py-1.5 text-sm text-neutral-50"
+                                    >Why Choose Us</span
+                                >
+                                <h2
+                                    class="mb-6 max-w-lg text-4xl font-extrabold"
+                                >
+                                    Incredible Support For You
+                                </h2>
+                                <p class="mb-10">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Doneca feugiat purus. Duis
+                                    turpis nunc aliquam id nunc acconvallis
+                                    dictum nisi. Curabitur vehicula tincidunt
+                                    sapien velcac. Donec diam augue consequat
+                                    sit amet metus acbibendum mattis massauis
+                                    mollis ligula pretium consequat.
+                                </p>
+                                <div class="flex gap-x-6">
+                                    <a
+                                        href="#"
+                                        class="inline-block rounded-lg bg-green-500 px-8 py-3.5 font-medium text-neutral-50 transition-all hover:bg-green-400"
+                                    >
+                                        Know More
+                                    </a>
+                                    <a
+                                        href="#"
+                                        class="inline-block rounded-lg border-2 bg-white px-8 py-3.5 font-medium text-green-800 transition-all hover:border-green-700 hover:bg-green-500 hover:text-neutral-50"
+                                    >
+                                        Contact Us
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <span class="mb-3 inline-block font-light tracking-wide"
+                            >We are here for you</span
+                        >
+                        <h2 class="text-3xl font-light tracking-wide">
+                            We are always available 24 hours a week
+                        </h2>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- Work Process -->
+            <!-- <section
+                class="bg-green-700 bg-[url('/bg-rounded.png')] bg-cover bg-top bg-no-repeat py-24"
+                style="background-position: 0% -5%"
+            >
+                <div
+                    class="mx-auto grid max-w-6xl grid-cols-2 items-center gap-10"
+                >
+                    <div>
+                        <span
+                            class="mb-5 inline-block rounded bg-green-500 px-5 py-1.5 text-sm text-neutral-50"
+                            >Work Process</span
+                        >
+                        <h2
+                            class="max-w-md text-6xl font-extrabold text-neutral-50"
+                        >
+                            Make It Happens In 4 Steps
+                        </h2>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div
+                            number="01"
+                            class="relative z-10 overflow-hidden rounded-xl bg-neutral-50 px-5 pb-5 pt-7 text-center shadow-xl before:absolute before:-right-6 before:top-8 before:-z-10 before:-rotate-90 before:text-7xl before:font-extrabold before:text-neutral-200 before:content-[attr(number)]"
+                        >
+                            <span
+                                class="squircle mx-auto mb-5 flex h-16 w-16 items-center justify-center bg-green-500 text-3xl text-neutral-50"
+                            >
+                                <i class="bx bx-edit-alt"></i>
+                            </span>
+                            <h3 class="mb-2 text-xl font-bold">
+                                Book Your Service
+                            </h3>
+                        </div>
+                        <div
+                            number="02"
+                            class="relative z-10 overflow-hidden rounded-xl bg-neutral-50 px-5 pb-5 pt-7 text-center shadow-xl before:absolute before:-right-6 before:top-8 before:-z-10 before:-rotate-90 before:text-7xl before:font-extrabold before:text-neutral-200 before:content-[attr(number)]"
+                        >
+                            <span
+                                class="squircle mx-auto mb-5 flex h-16 w-16 items-center justify-center bg-green-500 text-3xl text-neutral-50"
+                            >
+                                <i class="bx bx-package"></i>
+                            </span>
+                            <h3 class="mb-2 text-xl font-bold">
+                                Pack Your Good
+                            </h3>
+                        </div>
+                        <div
+                            number="03"
+                            class="relative z-10 overflow-hidden rounded-xl bg-neutral-50 px-5 pb-5 pt-7 text-center shadow-xl before:absolute before:-right-6 before:top-8 before:-z-10 before:-rotate-90 before:text-7xl before:font-extrabold before:text-neutral-200 before:content-[attr(number)]"
+                        >
+                            <span
+                                class="squircle mx-auto mb-5 flex h-16 w-16 items-center justify-center bg-green-500 text-3xl text-neutral-50"
+                            >
+                                <i class="bx bxs-truck"></i>
+                            </span>
+                            <h3 class="mb-2 text-xl font-bold">Safe Loading</h3>
+                        </div>
+                        <div
+                            number="04"
+                            class="relative z-10 overflow-hidden rounded-xl bg-neutral-50 px-5 pb-5 pt-7 text-center shadow-xl before:absolute before:-right-6 before:top-8 before:-z-10 before:-rotate-90 before:text-7xl before:font-extrabold before:text-neutral-200 before:content-[attr(number)]"
+                        >
+                            <span
+                                class="squircle mx-auto mb-5 flex h-16 w-16 items-center justify-center bg-green-500 text-3xl text-neutral-50"
+                            >
+                                <i class="bx bx-gift"></i>
+                            </span>
+                            <h3 class="mb-2 text-xl font-bold">
+                                Safe Delivery
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- Testimoni -->
+            <!-- <section class="py-24">
+                <div class="mx-auto max-w-6xl">
+                    <div class="mb-20 text-center">
+                        <span
+                            class="mb-5 inline-block rounded bg-green-500 px-5 py-1.5 text-sm text-neutral-50"
+                            >Customer Reviews</span
+                        >
+                        <h2 class="mx-auto max-w-lg text-4xl font-extrabold">
+                            What Our Clients Say
+                        </h2>
+                    </div>
+                    <div class="grid grid-cols-3 gap-10">
+                        <blockquote class="relative">
+                            <div
+                                class="relative w-4/5 rounded-2xl bg-green-700 bg-[url('./public/bg-overlay-right.png')] bg-cover bg-right bg-no-repeat p-10 py-16"
+                            >
+                                <div class="relative">
+                                    <h4
+                                        class="mb-1 text-xl font-bold text-neutral-50 before:mb-3 before:block before:h-1 before:w-16 before:bg-green-50"
+                                    >
+                                        Asep supian tsaori
+                                    </h4>
+                                    <span
+                                        class="mb-3 block text-xs text-neutral-200"
+                                        >Frontend Developer</span
+                                    >
+                                    <span>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                    </span>
+                                    <img
+                                        class="absolute -right-1/2 top-1/2 z-10 h-20 w-20 -translate-y-1/2 rounded-2xl border-8 border-neutral-50 object-cover shadow-2xl"
+                                        src="https://images.unsplash.com/photo-1512484776495-a09d92e87c3b?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="relative z-10 -mt-10 ml-5 rounded-2xl border bg-white p-7 shadow-neutral-200"
+                            >
+                                <div class="relative">
+                                    <p class="line-clamp-4 text-neutral-700">
+                                        " Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Eligendi
+                                        eos illo in magnam maiores obcaecati
+                                        provident."
+                                    </p>
+                                </div>
+                            </div>
+                        </blockquote>
+                        <blockquote class="relative">
+                            <div
+                                class="relative w-4/5 rounded-2xl bg-green-700 bg-[url('./public/bg-overlay-right.png')] bg-cover bg-right bg-no-repeat p-10 py-16"
+                            >
+                                <div class="relative">
+                                    <h4
+                                        class="mb-1 text-xl font-bold text-neutral-50 before:mb-3 before:block before:h-1 before:w-16 before:bg-green-50"
+                                    >
+                                        Asep supian tsaori
+                                    </h4>
+                                    <span
+                                        class="mb-3 block text-xs text-neutral-200"
+                                        >Frontend Developer</span
+                                    >
+                                    <span>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                    </span>
+                                    <img
+                                        class="absolute -right-1/2 top-1/2 z-10 h-20 w-20 -translate-y-1/2 rounded-2xl border-8 border-neutral-50 object-cover shadow-2xl"
+                                        src="https://images.unsplash.com/photo-1512484776495-a09d92e87c3b?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="relative z-10 -mt-10 ml-5 rounded-2xl border bg-white p-7 shadow-neutral-200"
+                            >
+                                <div class="relative">
+                                    <p class="line-clamp-4 text-neutral-700">
+                                        " Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Eligendi
+                                        eos illo in magnam maiores obcaecati
+                                        provident quod, tempore voluptate
+                                        voluptatibus."
+                                    </p>
+                                </div>
+                            </div>
+                        </blockquote>
+                        <blockquote class="relative">
+                            <div
+                                class="relative w-4/5 rounded-2xl bg-green-700 bg-[url('./public/bg-overlay-right.png')] bg-cover bg-right bg-no-repeat p-10 py-16"
+                            >
+                                <div class="relative">
+                                    <h4
+                                        class="mb-1 text-xl font-bold text-neutral-50 before:mb-3 before:block before:h-1 before:w-16 before:bg-green-50"
+                                    >
+                                        Asep supian tsaori
+                                    </h4>
+                                    <span
+                                        class="mb-3 block text-xs text-neutral-200"
+                                        >Frontend Developer</span
+                                    >
+                                    <span>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                        <i
+                                            class="bx bxs-star text-yellow-300"
+                                        ></i>
+                                    </span>
+                                    <img
+                                        class="absolute -right-1/2 top-1/2 z-10 h-20 w-20 -translate-y-1/2 rounded-2xl border-8 border-neutral-50 object-cover shadow-2xl"
+                                        src="https://images.unsplash.com/photo-1512484776495-a09d92e87c3b?auto=format&fit=crop&q=80&w=1587&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="relative z-10 -mt-10 ml-5 rounded-2xl border bg-white p-7 shadow-neutral-200"
+                            >
+                                <div class="relative">
+                                    <p class="line-clamp-4 text-neutral-700">
+                                        " Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Eligendi
+                                        eos illo in magnam maiores obcaecati
+                                        provident quod, tempore voluptate
+                                        voluptatibus."
+                                    </p>
+                                </div>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </section> -->
+
+            <!-- Form -->
+            <section
+                class="bg-primary-900 bg-[url('../public/images/bg-rounded.png')] bg-cover bg-top bg-no-repeat px-5 py-24 lg:px-0"
+                style="background-position: 0% 101%"
+            >
+                <div
+                    class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-20"
+                >
+                    <div class="lg:order-2">
+                        <span
+                            class="mb-5 inline-block rounded bg-secondary-500 px-5 py-1.5 text-sm text-neutral-50"
+                            >Contatti</span
+                        >
+                        <h2
+                            class="text-4xl font-extrabold text-neutral-50 lg:text-6xl"
+                        >
+                            Quali servizi possono interessarti e come ti
+                            possiamo aiutare?
+                        </h2>
+                    </div>
+                    <form
+                        class="relative rounded-2xl border bg-white p-8 shadow-2xl md:p-10"
+                    >
+                        <div class="mb-5 text-center">
+                            <span class=""
+                                >Non esitate a contattarci, saremo lieti di
+                                ascoltarvi.</span
+                            >
+                        </div>
+                        <div id="content" class="mb-8">
+                            <div class="grid grid-cols-2 gap-x-5 gap-y-3">
+                                <div class="col-span-2">
+                                    <label class="mb-2 inline-block text-xs"
+                                        >Nome Completo
+                                        <span
+                                            class="ml-1 inline-block h-2 w-2 rounded-full bg-rose-500"
+                                        ></span>
+                                    </label>
+                                    <input
+                                        class="w-full rounded border px-5 py-3 text-sm"
+                                        type="text"
+                                        placeholder="Asep supian tsaori"
+                                    />
+                                </div>
+                                <div class="col-span-2 md:col-span-1">
+                                    <label class="mb-2 inline-block text-xs"
+                                        >Indirizzo Email
+                                        <span
+                                            class="ml-1 inline-block h-2 w-2 rounded-full bg-rose-500"
+                                        ></span>
+                                    </label>
+                                    <input
+                                        class="w-full rounded border px-5 py-3 text-sm"
+                                        type="text"
+                                        placeholder="you@example.com"
+                                    />
+                                </div>
+                                <div class="col-span-2 md:col-span-1">
+                                    <label class="mb-2 inline-block text-xs"
+                                        >Numero di Telefono
+                                    </label>
+                                    <input
+                                        class="w-full rounded border px-5 py-3 text-sm"
+                                        type="text"
+                                        placeholder="0123456789"
+                                    />
+                                </div>
+
+                                <div class="col-span-2">
+                                    <label class="mb-2 inline-block text-xs"
+                                        >Messagi
+                                    </label>
+                                    <textarea
+                                        class="w-full rounded border px-5 py-3 text-sm"
+                                        name="message"
+                                        rows="3"
+                                        placeholder="Digitare qui..."
+                                    ></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <button
+                                href="#"
+                                class="ml-auto flex items-center justify-center gap-x-2 rounded-lg bg-primary-800 px-6 py-3 text-sm font-medium text-neutral-50 transition-all hover:bg-primary-500"
+                            >
+                                Inviare
+                                <i class="ri-send-plane-line align-middle"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-primary-900 px-5 lg:px-0">
+            <div class="mx-auto max-w-6xl">
+                <div class="mx-auto max-w-lg text-center">
+                    <h2
+                        class="text-2xl font-extrabold text-neutral-50 md:text-3xl"
+                    >
+                        Scrivici Oppure Contattaci al Telefono o Su Whatsapp
+                    </h2>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-between gap-10 border-b border-primary-950 pb-10 pt-14 text-white md:flex-row"
+                >
+                    <div>
+                        <div class="rounded-2xl bg-white p-5">
+                            <img
+                                class="m-auto w-32"
+                                src="../public/images/logo.svg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="flex gap-3">
+                        <a
+                            href="#"
+                            class="squircle inline-block h-12 w-12 rounded-lg bg-primary-800/40 text-center text-xl leading-[3rem]"
+                        >
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a
+                            href="#"
+                            class="squircle inline-block h-12 w-12 rounded-lg bg-primary-800/40 text-center text-xl leading-[3rem]"
+                        >
+                            <i class="ri-whatsapp-fill"></i>
+                        </a>
+                        <a
+                            href="#"
+                            class="squircle inline-block h-12 w-12 rounded-lg bg-primary-800/40 text-center text-xl leading-[3rem]"
+                        >
+                            <i class="ri-mail-fill"></i>
+                        </a>
+                        <a
+                            href="#"
+                            class="squircle inline-block h-12 w-12 rounded-lg bg-primary-800/40 text-center text-xl leading-[3rem]"
+                        >
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="py-5 text-center text-sm text-white">
+                    <p class="mb-2">
+                        Vacanze Solutions &copy; oleh Valentina Amico - Nomor
+                        PPN: 01657140883.
+                    </p>
+                    <p>
+                        L'accesso o l'utilizzo di questo sito è subordinato
+                        all'accettazione di
+                        <a href="#" class="underline underline-offset-2"
+                            >Privacy Policy</a
+                        >
+                        e
+                        <a href="#" class="underline underline-offset-2"
+                            >Cookie Policy</a
+                        >
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="./index.js"></script>
+        <script type="module">
+            // document.addEventListener("contextmenu", (event) =>
+            //     event.preventDefault(),
+            // );
+            // document.onkeydown = function (e) {
+            //     if (e.ctrlKey && e.keyCode === 85) {
+            //         return false;
+            //     }
+            // };
+
+            document.addEventListener("DOMContentLoaded", function () {
+                var dropdown = document.querySelectorAll(".dropdown");
+                // Menu Mobile
+                var mobileMenuButton =
+                    document.getElementById("mobile-menu-button");
+                var menuMobile = document.getElementById("menu-mobile");
+
+                mobileMenuButton.addEventListener("click", function (e) {
+                    menuMobile.classList.toggle("hidden");
+                    this.classList.toggle("active");
+                    document.body.classList.toggle("overflow-hidden");
+                });
+
+                dropdown.forEach((e) => {
+                    const dropDownMenu = e.querySelector(".dropdown-menu");
+                    e.addEventListener("click", function (e) {
+                        this.classList.toggle("active");
+                        if (
+                            dropDownMenu.getAttribute("aria-expanded") ==
+                            "false"
+                        ) {
+                            dropDownMenu.setAttribute("aria-expanded", "true");
+                        } else {
+                            dropDownMenu.setAttribute("aria-expanded", "false");
+                        }
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
